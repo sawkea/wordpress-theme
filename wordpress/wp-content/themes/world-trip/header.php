@@ -12,9 +12,13 @@
 
 <body <?php body_class(); ?>>
     <header class="header">
+        <div>
+            <img src="/img/old-1130734.jpg" alt="photo header">
+        </div>
         <a href="<?php echo home_url( '/' ); ?>">
             <img src="<?php echo get_template_directory_uri(); ?>/img/logo-world-trip.svg" alt="Logo World Trip">
         </a>  
     </header>
-    
+    <div class="container">
     <?php wp_body_open(); ?>
+    
