@@ -7,6 +7,10 @@ Création d'un thème de blog avec Wordpress !
 * Une page pour afficher un article ou une page
 * Une page 404
 
+## Réalisation d'un wireframe et d'une maquette 
+* wireframe mobile first et desktop avec photoshop
+
+
 
 
 
