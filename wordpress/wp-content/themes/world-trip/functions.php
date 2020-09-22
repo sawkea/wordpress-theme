@@ -13,7 +13,7 @@ function register_menu(){
 }
 
 // Ajout style BOOTSTRAP via une fonction
-function montheme_register_assets () {
+function worldtrip_register_assets () {
     
     // enregistrer le style
     wp_register_style('bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css', []);
@@ -30,10 +30,13 @@ function montheme_register_assets () {
     wp_enqueue_script( 'bootstrap' );
 }
 
+
 // ACTIONS ___________________________________________________________________________________________________
 
+// action title 
+add_filter('wp_title', 'worldtrip_title');
 // action menu
 add_action('init', 'register_menu');
 // action bootstrap
-add_action('wp_enqueue_scripts', 'montheme_register_assets');
+add_action('wp_enqueue_scripts', 'worldtrip_register_assets');
 
