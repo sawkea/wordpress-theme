@@ -12,6 +12,10 @@ function register_menu(){
 
 }
 
+// MENU
+function wordltrip_menus () {
+    register_nav_menu('menu-kebab','menu-kebab');
+}
 
 // AJOUT STYLES _______________________________________________________________________________________________
 function worldtrip_register_assets () {
@@ -56,6 +60,7 @@ function worldtrip_register_assets () {
 add_filter('wp_title', 'worldtrip_title');
 // action menu
 add_action('init', 'register_menu');
+add_action('after_setup_theme', 'wordltrip_menus');
 // action styles
 add_action('wp_enqueue_scripts', 'worldtrip_register_assets');
 

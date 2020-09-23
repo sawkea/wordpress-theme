@@ -19,22 +19,61 @@
         </div>
 
         <!-- Menu kebab ----------------------------------------------->
-        <div class="d-flex justify-content-end pr-2">
-            <ul class="nav">
+        <!-- <div class="d-flex justify-content-end pr-2">
+            
                 <div class="kebab">
                     <figure></figure>
                     <figure class="middle"></figure>
                     <p class="cross">x</p>
                     <figure></figure>
                     <ul class="dropdown">
-                        <li><a href="http://www.g.com">Art</a></li>
-                        <li><a href="http://www.g.com">Coding</a></li>
-                        <li><a href="http://www.g.com">Design</a></li>
-                        <li><a href="http://www.g.com">Web Development</a></li>
+                        <li><a href="http://www.g.com">Home</a></li>
+                        <li><a href="http://www.g.com">About</a></li>
+                        <li><a href="http://www.g.com">Items</a></li>
+                        <li><a href="http://www.g.com">Golden book</a></li>
                     </ul>
                 </div>
-            </ul>
+        </div> -->
+        <!-- Menu kebab ----------------------------------------------->
+        <div class="d-flex justify-content-end pr-2">
+            
+                <div class="kebab">
+                    <figure></figure>
+                    <figure class="middle"></figure>
+                    <p class="cross">x</p>
+                    <figure></figure>
+                    <?php
+                        wp_nav_menu(
+                            array(
+                                'theme_location'  => 'menu-kebab', // identifiant du menu, défini dans functions.php
+                                'container'       => 'nav', // élément conteneur
+                                'container_class' => 'kebab', // élément conteneur
+                                'menu_class'      => 'dropdown', // class du menu
+                            )
+                        );
+                    ?>
+                    <!-- <ul class="dropdown">
+                        <li><a href="http://www.g.com">Home</a></li>
+                        <li><a href="http://www.g.com">About</a></li>
+                        <li><a href="http://www.g.com">Items</a></li>
+                        <li><a href="http://www.g.com">Golden book</a></li>
+                    </ul> -->
+                </div>
+            
         </div>
+
+        
+            <?php
+                // wp_nav_menu(
+                //     array(
+                //         'theme_location'  => 'menu-kebab', // identifiant du menu, défini dans functions.php
+                //         'container'       => 'false', // élément conteneur
+                //         'container_class' => 'd-flex justify-content-end pr-2', // classe de cet élément
+                //         'menu_class'      => 'kebab', // class du menu
+                //     )
+                // );
+            ?>
+       
 
         
       
