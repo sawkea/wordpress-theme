@@ -24,7 +24,7 @@ $color-principal: rgb(0, 0, 0);
 
 // GENERAL ______________________________________________________________________
 .mt-10{
-  margin-top: 10rem;
+  margin-top: 10vw;
 }
 .mt-6{
   margin-top: 6rem;
@@ -237,10 +237,12 @@ a, li {
 }
 
 // HEADER ___________________________________________________________
-// #text-header{
-//   position: relative;
-//   margin-top: -15rem;
-// }
+
+ @media screen and (min-width: 992px) {
+  h1 {
+    margin-top: 5rem;
+  }
+ }
 
 .container-image-hero{
   width: 800px;
