@@ -22,7 +22,8 @@
 
 <!-- section ABOUT -->
 <section>
-    <div id="about" class="mt-10"><img class="img-fluid mt-5 mb-5" src="<?php echo get_template_directory_uri(); ?>/img/photo-about.png" alt="Image about"></div>
+    <div id="about" class="mt-10"><img class="img-fluid mt-5" src="<?php echo get_template_directory_uri(); ?>/img/photo-about.png" alt="Image about"></div>
+    <img id="about-perso" class="img-fluid mb-5" src="<?php echo get_template_directory_uri(); ?>/img/photo-about-perso.png" alt="Image about">
 </section>
 
 
