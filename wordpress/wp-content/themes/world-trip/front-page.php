@@ -11,11 +11,20 @@
     
 <div id="about" class="mt-10"><?php the_content(); ?></div> -->
 
-<h1 id="text-header" class="text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit, uibusdam, aliquam aut. Explicabo nam a eum quaerat quod voluptatibus, sapiente corrupti amet hic iure facilis similique impedit possimus !</h1>
 
-<div class="mx-auto"><img class="img-fluid mt-5 mb-5" src="<?php echo get_template_directory_uri(); ?>/img/photo-hero.png" alt="Image hero"></div>
+<!-- section HOME -->
+<section>
+    <h1 id="text-header" class="text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit, uibusdam, aliquam aut. Explicabo nam a eum quaerat quod voluptatibus, sapiente corrupti amet hic iure facilis similique impedit possimus !</h1>
     
-<div id="about" class="mt-10"><?php the_content(); ?></div> 
+    <div class="mx-auto"><img class="img-fluid mt-5 mb-5" src="<?php echo get_template_directory_uri(); ?>/img/photo-hero.png" alt="Image hero"></div>
+</section>
+</div>
+
+<!-- section ABOUT -->
+<section>
+    <div id="about" class="mt-10"><img class="img-fluid mt-5 mb-5" src="<?php echo get_template_directory_uri(); ?>/img/photo-about.png" alt="Image about"></div>
+</section>
+
 
 
 <?php get_footer(); ?>

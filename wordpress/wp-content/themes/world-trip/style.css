@@ -251,4 +251,12 @@ a, li {
 .container-image-hero {
   width: 800px;
 }
+
+#about img {
+  border-radius: 0px 300px 0px 50px / 50px 50px 0px 50px;
+}
+
+.container-image-hero {
+  width: 800px;
+}
 /*# sourceMappingURL=style.css.map */
