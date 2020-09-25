@@ -18,24 +18,8 @@
             <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/header.png" alt="image du header">
         </div>
 
-        <!-- Menu kebab ----------------------------------------------->
-        <!-- <div class="d-flex justify-content-end pr-2">
-            
-                <div class="kebab">
-                    <figure></figure>
-                    <figure class="middle"></figure>
-                    <p class="cross">x</p>
-                    <figure></figure>
-                    <ul class="dropdown">
-                        <li><a href="http://www.g.com">Home</a></li>
-                        <li><a href="http://www.g.com">About</a></li>
-                        <li><a href="http://www.g.com">Items</a></li>
-                        <li><a href="http://www.g.com">Golden book</a></li>
-                    </ul>
-                </div>
-        </div> -->
-        <!-- Menu kebab ----------------------------------------------->
-        <div class="d-flex justify-content-end pr-2">
+        <!-- Menu kebab - visible en mobile version -------------------->
+        <div class="d-flex justify-content-end d-block d-lg-none">
             
                 <div class="kebab">
                     <figure></figure>
@@ -43,6 +27,7 @@
                     <p class="cross">x</p>
                     <figure></figure>
                     <?php
+                        // class wp pour menu kebab afin de creer le ul et les li
                         wp_nav_menu(
                             array(
                                 'theme_location'  => 'menu-kebab', // identifiant du menu, défini dans functions.php
@@ -52,51 +37,28 @@
                             )
                         );
                     ?>
-                    <!-- <ul class="dropdown">
-                        <li><a href="http://www.g.com">Home</a></li>
-                        <li><a href="http://www.g.com">About</a></li>
-                        <li><a href="http://www.g.com">Items</a></li>
-                        <li><a href="http://www.g.com">Golden book</a></li>
-                    </ul> -->
                 </div>
-            
         </div>
-
-        
-            <?php
-                // wp_nav_menu(
-                //     array(
-                //         'theme_location'  => 'menu-kebab', // identifiant du menu, défini dans functions.php
-                //         'container'       => 'false', // élément conteneur
-                //         'container_class' => 'd-flex justify-content-end pr-2', // classe de cet élément
-                //         'menu_class'      => 'kebab', // class du menu
-                //     )
-                // );
-            ?>
-       
-
-        
       
-                <!-- Logo --------------------------------------------------->
-                <a href="<?php echo home_url( '/' ); ?>">
-                    <img class="mx-auto d-block" src="<?php echo get_template_directory_uri(); ?>/img/logo-world-trip.svg" alt="Logo World Trip">
-                </a> 
+        <!-- Logo --------------------------------------------------->
+        <a href="<?php echo home_url( '/' ); ?>">
+            <img class="mx-auto d-block" src="<?php echo get_template_directory_uri(); ?>/img/logo-world-trip.svg" alt="Logo World Trip">
+        </a> 
         
-    
-            
-
-
- 
     </header>
 
-    <div class="container">
-    <div class="navigation">
+    
+
+
+    <div class="container ">
+    <div class="menu-desktop d-none d-lg-block">
         <?php
             if( has_nav_menu('header-menu')) {
                 wp_nav_menu(
                     array(
                         'theme_location' => 'header-menu',
-                        'menu_class' => 'navbar'
+                        'menu_class' => 'navbar',
+
                     )
                 );
             }
