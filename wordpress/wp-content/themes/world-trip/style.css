@@ -20,6 +20,10 @@ ul a:hover {
   margin-top: 10rem;
 }
 
+.mt-6 {
+  margin-top: 6rem;
+}
+
 body, h1, li, a {
   font-family: "Gill Sans MT";
   color: black !important;
@@ -42,8 +46,7 @@ h1 {
 }
 
 .menu-desktop ul li a:hover {
-  color: #201616;
-  font-weight: bold;
+  color: white !important;
 }
 
 .menu-desktop ul li {
@@ -51,6 +54,14 @@ h1 {
   width: 7rem;
   border-radius: 10px;
   text-align: center;
+}
+
+.menu-desktop ul li:hover {
+  border: 1px solid #201616;
+  width: 7rem;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #201616;
 }
 
 .menu-desktop ul li a {

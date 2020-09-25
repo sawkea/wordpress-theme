@@ -26,6 +26,9 @@ $color-principal: rgb(0, 0, 0);
 .mt-10{
   margin-top: 10rem;
 }
+.mt-6{
+  margin-top: 6rem;
+}
 body, h1, li, a{
   font-family: $font-second;
   color: $color-principal!important;
@@ -50,10 +53,7 @@ $brown : rgb(32, 22, 22);
     
   }
   ul li a:hover{
-    color: $brown;
-    font-weight: bold;
-    
-    
+    color: white!important;
   }
   ul li {
     // background-image: url(img/contour-navigation.png);
@@ -62,10 +62,16 @@ $brown : rgb(32, 22, 22);
     border-radius: 10px;
     text-align: center;
   }
+  ul li:hover {
+    // background-image: url(img/contour-navigation.png);
+    border: 1px solid $brown;
+    width: 7rem;
+    border-radius: 10px;
+    text-align: center;
+    background-color: $brown;
+  }
   ul li a{
-    
     font-family: $font-second;
-    
   }
 }
 
