@@ -1,7 +1,22 @@
 <?php get_header(); ?>
-page items
-<h1><?php the_title(); ?></h1>
-      
+
+     
+    <div class="container">
+        <div class="d-flex align-items-center">
+            <?php
+                if( has_nav_menu('category')) {
+                    wp_nav_menu(
+                        array(
+                            'theme_location' => 'category',
+                            'menu_class' => 'nav-item', 'dropdown', 
+                            // 'depth' => 1,
+                        )
+                    );
+                }
+            ?>
+        </div>
+    </div>
+
 <?php if( have_posts() ) : while( have_posts() ) : the_post(); ?>
 
     <div class="post">
@@ -20,6 +35,10 @@ page items
             <a href="<?php the_permalink(); ?>" class="post__link">Lire la suite</a>
         </p>
     </div>
+
+
+
+    
     
 
 <?php endwhile; endif; ?>

@@ -12,3 +12,12 @@
         </div>
     </div> 
 
+<!-- <div class="image-cont">
+    <div class="container-img">
+            <div class="container">
+                <h1>Aligner du texte par rapport à une image</h1>
+            
+                <div class="text-justify"><img id="about-perso" class="img-fluid float-right pl-4" src="<?php echo get_template_directory_uri(); ?>/img/photo-about-perso.png" alt="photo perso">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, look even slightly believable. But the majority have suffered alteration in some ! There are many variations of passages of Lorem Ipsum available, or randomised words which don't look even slightly believable.</div>
+            </div>
+    </div>
+</div> -->

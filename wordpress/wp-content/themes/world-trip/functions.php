@@ -9,7 +9,7 @@ add_theme_support( 'title-tag' );
 // Ajoute une nouvelle zone de menu
 function register_menu(){
     register_nav_menu( 'header-menu', __( 'header-menu'));
-
+    register_nav_menu( 'category', __( 'category'));
 }
 
 // MENU

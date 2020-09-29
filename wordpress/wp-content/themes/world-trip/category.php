@@ -1,18 +1,20 @@
 <?php get_header(); ?>
 	
 
-	<h1><?php the_title(); ?></h1>
-        <div>
-        <?php
-            if( has_nav_menu('header-menu')) {
-                wp_nav_menu(
-                    array(
-                        'theme_location' => 'header-menu',
-                        'menu_class' => 'navbar'
-                    )
-                );
-            }
+    <div class="container">
+        <div class="d-flex align-items-center">
+            <?php
+                if( has_nav_menu('category')) {
+                    wp_nav_menu(
+                        array(
+                            'theme_location' => 'category',
+                            'menu_class' => 'nav-item', 'dropdown', 
+                            // 'depth' => 1,
+                        )
+                    );
+                }
             ?>
         </div>
+    </div>
         <?php the_content(); ?>
 <?php get_footer(); ?>
