@@ -20,6 +20,10 @@ function wordltrip_menus () {
 // AJOUT STYLES _______________________________________________________________________________________________
 function worldtrip_register_assets () {
 
+    // FONTS ****************************************************************************
+    wp_register_style('fonts', 'href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap" rel="stylesheet"');
+    wp_enqueue_style( 'fonts' );
+
     // BOOTSTRAP ********************************************************************
     // enregistrer le style
     wp_register_style('bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css', []);
@@ -42,10 +46,7 @@ function worldtrip_register_assets () {
         array(), 
         '1.0'
     );
-    // FONTS ****************************************************************************
-    wp_register_style('fonts', 'https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&display=swap');
-    wp_enqueue_style( 'fonts' );
-
+    
 
     // Déclarer le JS *******************************************************************
 	wp_enqueue_script( 

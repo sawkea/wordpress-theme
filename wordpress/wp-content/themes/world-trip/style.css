@@ -1,4 +1,13 @@
 @charset "UTF-8";
+/*
+Theme Name: world-trip
+Theme URI: 
+Author: Sonia HOAREAU
+Author URI: 
+Description: Mon premier thème !
+Requires at least: WordPress 5.0
+Version: 1.0
+*/
 ul {
   list-style: none;
 }
@@ -24,13 +33,26 @@ ul a:hover {
   margin-top: 6rem;
 }
 
-body, h1, li, a {
+body, li, a {
   font-family: "Gill Sans MT";
   color: black !important;
 }
 
 h1 {
-  font-size: 1rem;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+h2, h3 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 2.5rem;
+}
+
+.title-line {
+  border-bottom: 2px solid black;
+  width: 3rem;
+  margin-bottom: 2rem;
 }
 
 .menu-desktop {
@@ -242,14 +264,12 @@ a, li {
   }
 }
 
-@media screen and (min-width: 992px) {
-  h1 {
-    margin-top: 5rem;
-  }
-}
-
 .container-image-hero {
   width: 800px;
+}
+
+#text-header {
+  font-size: 1.5rem;
 }
 
 #about img {
@@ -261,10 +281,31 @@ a, li {
   border-radius: 0px 300px 0px 50px / 50px 50px 0px 50px;
   height: 250px;
   position: relative;
-  margin-top: -32rem;
+}
+
+.about-relative {
+  position: relative;
+  margin-top: -26rem;
 }
 
 .container-image-hero {
   width: 800px;
+}
+
+.div-img {
+  background-image: url("img/photo-about.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.image-cont {
+  width: 100vw;
+  height: 80rem;
+}
+
+.container-img {
+  background-image: url("img/photo-about.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 /*# sourceMappingURL=style.css.map */

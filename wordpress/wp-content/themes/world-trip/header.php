@@ -43,6 +43,7 @@
         <!-- Logo --------------------------------------------------->
         <a href="<?php echo home_url( '/' ); ?>">
             <img class="mx-auto d-block" src="<?php echo get_template_directory_uri(); ?>/img/logo-world-trip.svg" alt="Logo World Trip">
+            <h1 class="text-center mb-5"><?php bloginfo('description'); ?></h1>
         </a> 
         
     </header>
