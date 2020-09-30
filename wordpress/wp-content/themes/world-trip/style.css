@@ -38,7 +38,7 @@ ul a:hover {
 }
 
 body, li, a {
-  font-family: "Gill Sans MT";
+  font-family: "Gill Sans MT" !important;
   color: black !important;
 }
 
@@ -326,6 +326,15 @@ a, li {
   font-size: 2rem;
 }
 
+#page-no-found {
+  background-image: url("img/fond_404.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 100%;
+  height: 34rem;
+}
+
 #page-no-found .title-line {
   margin-bottom: 2.5rem !important;
 }
@@ -340,13 +349,32 @@ a, li {
 }
 
 #page-no-found .page-no-found {
-  background-image: url("img/fond_404.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 800px;
   font-size: 1.925rem;
   text-transform: uppercase;
   margin-top: -2rem;
+}
+
+@media screen and (max-width: 750px) {
+  #page-no-found {
+    height: 27rem;
+  }
+  .num-page-no-found {
+    font-size: 1rem;
+  }
+}
+
+#social-network ul li:nth-child(n+1) {
+  margin-right: 2rem;
+}
+
+#social-network li {
+  z-index: 2;
+  font-size: 2.5rem;
+}
+
+@media screen and (max-width: 750px) {
+  #social-network {
+    margin-top: 2rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */

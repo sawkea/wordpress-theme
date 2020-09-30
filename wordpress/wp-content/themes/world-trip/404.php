@@ -72,17 +72,21 @@
 
 
     <!-- 404 PAGE NO FOUND ------------------------------------------>
-    <div id="page-no-found">
-        <div class="row justify-content-center">
     
-            <!-- ligne du titre---------->
-            <div class="title-line mb-2"></div>
+        
+            <div id="page-no-found">
+                <div class="row justify-content-center">
+            
+                    <!-- ligne du titre---------->
+                    <div class="title-line mb-2"></div>
+            
+                    <p class="num-page-no-found">404</p> <br>
+                </div>
+            
+                <p class="page-no-found text-center">page no found</p>
+            </div>
+        
     
-            <p class="num-page-no-found">404</p> <br>
-        </div>
-    
-        <p class="page-no-found text-center">page no found</p>
-    </div>
     
 
 </div>

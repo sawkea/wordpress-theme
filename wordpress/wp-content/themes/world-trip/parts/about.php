@@ -10,7 +10,7 @@
 
                 <!-- ligne du titre---------->
                 <div class="title-line"></div>
-                
+
                 <p class="text-justify">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, look even slightly believable. But the majority have suffered alteration in some ! There are many variations of passages of Lorem Ipsum available, or randomised words which don't look even slightly believable.</p> 
         </div>
     </div> 

@@ -45,7 +45,7 @@ $color-principal: rgb(0, 0, 0);
   margin-bottom: 10rem;
 }
 body, li, a{
-  font-family: $font-second;
+  font-family: $font-second!important;
   color: $color-principal!important;
 }
 h1{
@@ -261,11 +261,7 @@ a, li {
   }
 }
 
-// HEADER ___________________________________________________________
-
- @media screen and (min-width: 992px) {
-  
- }
+// HEADER __________________________________________________________
 
 .container-image-hero{
   width: 800px;
@@ -331,6 +327,13 @@ a, li {
 
 // PAGE NO FOUND  ____________________________________________________
 #page-no-found{
+  background-image: url("img/fond_404.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 100%;
+  height: 34rem;
+  
   .title-line{
     margin-bottom: 2.5rem!important;
   }
@@ -341,17 +344,44 @@ a, li {
  p{
    margin-bottom:0;
  }
+ 
   .page-no-found{
-    background-image: url("img/fond_404.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 800px;
     font-size: 1.925rem;
     text-transform: uppercase;
     margin-top:-2rem;
   }
 
 }
+@media screen and (max-width: 750px) {
+  #page-no-found{
+    height: 27rem;
+  }
+  .num-page-no-found{
+    font-size: 1rem;
+  }
 
+}
 
+// FOOTER ___________________________________________________________
+
+#social-network{
+  
+  
+  ul li:nth-child(n+1){
+    margin-right: 2rem;
+  }
+    li{
+      z-index: 2;
+      font-size: 2.5rem;
+    }
+    
+}
+
+@media screen and (max-width: 750px) {
+  #social-network{
+
+    margin-top: 2rem;
+      
+  }
+
+}
