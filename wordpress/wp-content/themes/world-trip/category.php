@@ -1,20 +1,16 @@
 <?php get_header(); ?>
 	
 
-    <div class="container">
-        <div class="d-flex align-items-center">
+    <!-- Menu CATEGORIES ------------------------------------------------------------->
+    <?php get_template_part('parts/menu-categories', 'menu') ?>
+
+        <!-- Afficher la catégorie choisie -->
+        <h3>Catégory: 
             <?php
-                if( has_nav_menu('category')) {
-                    wp_nav_menu(
-                        array(
-                            'theme_location' => 'category',
-                            'menu_class' => 'nav-item', 'dropdown', 
-                            // 'depth' => 1,
-                        )
-                    );
-                }
+                $category = get_the_category();
+                echo $category[0]->cat_name;
             ?>
-        </div>
-    </div>
+        </h3>
+
         <?php the_content(); ?>
 <?php get_footer(); ?>

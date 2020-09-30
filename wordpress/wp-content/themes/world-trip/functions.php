@@ -28,8 +28,8 @@ function worldtrip_register_assets () {
     // enregistrer le style
     wp_register_style('bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css', []);
     // enregistrer script js 
-    wp_register_script('bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js', ['popper', 'jquery'], false, true);
-    wp_register_script('popper', 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js', [], false, true);
+    wp_register_script('bootstrap', 'https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js', ['popper', 'jquery'], false, true);
+    wp_register_script('popper', 'https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js', [], false, true);
 
     //ne pas enregistrer je jquery de wordpress a faire attention pour des plugins wordpress
     wp_deregister_script('jquery');
@@ -38,6 +38,10 @@ function worldtrip_register_assets () {
     // utiliser le style et les scripts
     wp_enqueue_style( 'bootstrap' );
     wp_enqueue_script( 'bootstrap' );
+
+    // FONTAWESOME **********************************************************************
+    wp_register_script('fontawesome', 'https://kit.fontawesome.com/5458cc12a8.js',[], false, true);
+    wp_enqueue_script('fontawesome');
 
     // STYLE.CSS de la racine************************************************************
     wp_enqueue_style( 

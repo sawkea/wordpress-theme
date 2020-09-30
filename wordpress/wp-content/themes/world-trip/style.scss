@@ -35,10 +35,14 @@ $color-principal: rgb(0, 0, 0);
 
 // GENERAL ______________________________________________________________________
 .mt-10{
-  margin-top: 10vw;
+  margin-top: 10rem;
 }
+
 .mt-6{
   margin-top: 6rem;
+}
+.mb-10{
+  margin-bottom: 10rem;
 }
 body, li, a{
   font-family: $font-second;
@@ -56,7 +60,7 @@ h2, h3{
 .title-line{
   border-bottom: 2px solid black;
   width: 3rem;
-  margin-bottom: 2rem;;
+  margin-bottom: 2rem;
 }
 
 
@@ -309,3 +313,45 @@ a, li {
   background-repeat: no-repeat;
   // height: 700px;
 }
+
+// Menu CATEGORIES  __________________________________________________
+.relative{
+  position: relative;
+}
+
+// ITEMS  ____________________________________________________________
+.card-title{
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.fas{
+  font-size: 2rem;
+}
+
+// PAGE NO FOUND  ____________________________________________________
+#page-no-found{
+  .title-line{
+    margin-bottom: 2.5rem!important;
+  }
+  .num-page-no-found{
+    font-family: $font-principal;
+    font-size: 8rem;
+  }
+ p{
+   margin-bottom:0;
+ }
+  .page-no-found{
+    background-image: url("img/fond_404.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 800px;
+    font-size: 1.925rem;
+    text-transform: uppercase;
+    margin-top:-2rem;
+  }
+
+}
+
+

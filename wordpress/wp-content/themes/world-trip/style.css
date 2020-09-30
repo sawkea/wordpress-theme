@@ -26,11 +26,15 @@ ul a:hover {
 }
 
 .mt-10 {
-  margin-top: 10vw;
+  margin-top: 10rem;
 }
 
 .mt-6 {
   margin-top: 6rem;
+}
+
+.mb-10 {
+  margin-bottom: 10rem;
 }
 
 body, li, a {
@@ -307,5 +311,42 @@ a, li {
   background-image: url("img/photo-about.png");
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.relative {
+  position: relative;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.fas {
+  font-size: 2rem;
+}
+
+#page-no-found .title-line {
+  margin-bottom: 2.5rem !important;
+}
+
+#page-no-found .num-page-no-found {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 8rem;
+}
+
+#page-no-found p {
+  margin-bottom: 0;
+}
+
+#page-no-found .page-no-found {
+  background-image: url("img/fond_404.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 800px;
+  font-size: 1.925rem;
+  text-transform: uppercase;
+  margin-top: -2rem;
 }
 /*# sourceMappingURL=style.css.map */

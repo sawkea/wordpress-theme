@@ -1,5 +1,7 @@
 <?php get_header(); ?>
-page single
+<!-- Button retour page accueil -->
+<div class="mt-5 mb-3 text-right"><a href="<?php echo home_url( '/' );?>"<span class="fas fa-chevron-circle-left"></span></a></div>
+
 <?php if( have_posts() ) : while( have_posts() ) : the_post(); ?>
 
     <div class="post">
