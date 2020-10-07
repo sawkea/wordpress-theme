@@ -36,18 +36,22 @@
     <h2>RECENT POST</h2>
     <!-- ligne du titre---------->
     <div class="title-line"></div>
-        <div class="row">
-            <div class="mt-5 mx-auto">
+        <div class="row content">
+            <div class="mt-5 mx-auto content-overlay">
                 <?php
                     $recentPosts = new WP_Query();
                     $recentPosts->query('showposts=4');
                 ?>
                 <?php while ($recentPosts->have_posts()) : $recentPosts->the_post(); ?>
                     <div>
-                        <a href="<?php the_permalink(); ?>" class="post__link"><div class="mb-2"><?php the_post_thumbnail('medium', ['class' => 'col-12', 'alt'=>'', 'style' => 'height : auto;']); ?></div></a>
+                        <a href="<?php the_permalink(); ?>" class="post__link"><div class="mb-2"><?php the_post_thumbnail('medium', ['class' => 'row', 'alt'=>'', 'style' => 'height : auto;']); ?></div></a>
                     </div>
                 <?php endwhile; ?>
             </div>
+            <div class="content-details fadeIn-top">
+        <h3>This is a title</h3>
+        <p>This is a short description</p>
+      </div>
             
         </div>
 </section>

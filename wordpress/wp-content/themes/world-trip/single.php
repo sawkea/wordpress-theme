@@ -1,7 +1,11 @@
 <?php get_header(); ?>
-<!-- Button retour page accueil -->
-<div class="container">
-    <div class="mt-5 mb-3 text-right"><a href="<?php echo home_url( '/' );?>"<i class="fas fa-chevron-circle-left"></i></a></div>
+
+
+<div class="single-item container">
+    <div class="mt-5 mb-3 text-right">
+        <!-- Button retour page accueil -->
+        <a href="<?php echo home_url( '/' );?>"<i class="fas fa-chevron-circle-left"></i></a>
+    </div>
     
     <?php if( have_posts() ) : while( have_posts() ) : the_post(); ?>
     

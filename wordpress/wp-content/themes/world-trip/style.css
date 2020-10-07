@@ -46,6 +46,7 @@ h1 {
   font-family: "Cormorant Garamond", serif;
   font-weight: 700;
   font-size: 1.2rem;
+  text-decoration: none;
 }
 
 h2, h3 {
@@ -71,10 +72,6 @@ h2, h3 {
   margin-right: -20rem;
 }
 
-.menu-desktop ul li a:hover {
-  color: white !important;
-}
-
 .menu-desktop ul li {
   border: 1px solid #201616;
   width: 7rem;
@@ -82,12 +79,17 @@ h2, h3 {
   text-align: center;
 }
 
-.menu-desktop ul li:hover {
+.menu-desktop ul > li:hover {
   border: 1px solid #201616;
   width: 7rem;
   border-radius: 10px;
   text-align: center;
   background-color: #201616;
+  cursor: pointer;
+}
+
+.menu-desktop ul > li:hover a {
+  color: white !important;
 }
 
 .menu-desktop ul li a {
@@ -334,6 +336,16 @@ a, li {
   font-size: 2rem;
 }
 
+.single-item p {
+  text-align: justify;
+}
+
+.single-item p img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
 #page-no-found {
   background-image: url("img/fond_404.png");
   background-size: cover;
@@ -384,13 +396,45 @@ a, li {
   background-image: url("img/footer.png");
 }
 
-#social-network ul li:nth-child(n+1) {
+.social-network ul li:nth-child(n+1) {
   margin-right: 2rem;
 }
 
-#social-network li {
+.social-network li {
   z-index: 2;
   font-size: 2.5rem;
+}
+
+.social-network ul li span:hover {
+  color: #582e1a;
+  -webkit-animation-name: scale;
+          animation-name: scale;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
+@-webkit-keyframes scale {
+  from {
+    -webkit-transform: scale();
+            transform: scale();
+  }
+  to {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+  }
+}
+
+@keyframes scale {
+  from {
+    -webkit-transform: scale();
+            transform: scale();
+  }
+  to {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+  }
 }
 
 @media screen and (max-width: 750px) {
