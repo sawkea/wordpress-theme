@@ -281,9 +281,7 @@ a, li {
   border-radius: 0px 300px 0px 50px / 50px 50px 0px 50px;
   height: 250px;
   position: relative;
-  
 }
-
 .about-relative{
   position: relative;
   margin-top: -26rem;
@@ -309,6 +307,17 @@ a, li {
   background-repeat: no-repeat;
   // height: 700px;
 }
+@media screen and (min-width: 630px) {
+  #about img{
+    margin-left: auto!important;
+    margin-right: auto!important;
+    height: 80vh;
+  }
+}
+
+
+
+
 
 // Menu CATEGORIES  __________________________________________________
 .relative{
@@ -363,9 +372,19 @@ a, li {
 }
 
 // FOOTER ___________________________________________________________
-
-#social-network{
+.container-bg{
+  width: 100vw;
+  height: 30vh;
+}
+.bg-footer{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  height: 100%;
+  background-image: url("img/footer.png");
   
+}
+#social-network{
   
   ul li:nth-child(n+1){
     margin-right: 2rem;
@@ -379,9 +398,11 @@ a, li {
 
 @media screen and (max-width: 750px) {
   #social-network{
-
     margin-top: 2rem;
-      
   }
-
+  .bg-footer{
+    background-size: contain;
+    
+    
+  }
 }

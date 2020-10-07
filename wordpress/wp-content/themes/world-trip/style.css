@@ -313,6 +313,14 @@ a, li {
   background-repeat: no-repeat;
 }
 
+@media screen and (min-width: 630px) {
+  #about img {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    height: 80vh;
+  }
+}
+
 .relative {
   position: relative;
 }
@@ -363,6 +371,19 @@ a, li {
   }
 }
 
+.container-bg {
+  width: 100vw;
+  height: 30vh;
+}
+
+.bg-footer {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  height: 100%;
+  background-image: url("img/footer.png");
+}
+
 #social-network ul li:nth-child(n+1) {
   margin-right: 2rem;
 }
@@ -375,6 +396,9 @@ a, li {
 @media screen and (max-width: 750px) {
   #social-network {
     margin-top: 2rem;
+  }
+  .bg-footer {
+    background-size: contain;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -12,7 +12,7 @@
 <div id="about" class="mt-10"><?php the_content(); ?></div> -->
 
 <!-- section HOME ---------------------------------------------------------------->
-<section>
+<section class="container">
     <h2 id="text-header" class="text-justify mt-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit, uibusdam, aliquam aut. Explicabo nam a eum quaerat quod voluptatibus, sapiente corrupti amet hic iure facilis similique impedit possimus !</h2>
         
     <div class="mx-auto"><img class="img-fluid mt-5 mb-5" src="<?php echo get_template_directory_uri(); ?>/img/photo-hero.png" alt="Image hero"></div>
@@ -58,7 +58,7 @@
 <section>
     <div><?php get_template_part('parts/golden-book', 'page') ?></div>
 </section>
-</div>
+
 
 
 <?php get_footer(); ?>

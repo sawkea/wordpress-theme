@@ -35,12 +35,13 @@ function worldtrip_register_assets () {
     wp_deregister_script('jquery');
 
     wp_register_script('jquery', 'https://code.jquery.com/jquery-3.2.1.slim.min.js', [], false, true);
+
     // utiliser le style et les scripts
     wp_enqueue_style( 'bootstrap' );
     wp_enqueue_script( 'bootstrap' );
 
     // FONTAWESOME **********************************************************************
-    wp_register_script('fontawesome', 'https://kit.fontawesome.com/5458cc12a8.js',[], false, true);
+    wp_register_script('fontawesome', 'https://kit.fontawesome.com/1bf0880d3b.js', [], false, true);
     wp_enqueue_script('fontawesome');
 
     // STYLE.CSS de la racine************************************************************
